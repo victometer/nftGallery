@@ -7,7 +7,7 @@ This project uses Tailwind CSS (v3.3.3) with Next.js. It follows the steps outli
 3. Alchemy NFT API
 4. Alchemy Account
 
-#### How to use:
+### How to use:
 
 ##### Set-up app
 ```bash
