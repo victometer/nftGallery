@@ -1,34 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This project uses Tailwind CSS (v3.3.3) with Next.js. It follows the steps outlined in the official Tailwind docs here: https://tailwindcss.com/docs/guides/nextjs.
 
-## Getting Started
+## Required tools:
 
-First, run the development server:
+1. Next JS
+2. Tailwind CSS
+3. Alchemy NFT API
+4. Alchemy Account
 
+#### How to use:
+
+##### Set-up app
 ```bash
+create-next-app
+# with
+npm
+# like so:
+npx create-next-app --example_app_name with-tailwindcss with-tailwindcss-app
+```
+##### Adjust tailwind.config file according to the tailwind docs linked above
+##### Open server to get the localhost url for your next.js front end
+```
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Set-up Alchemy API
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Create a new app with Alchemy. Copy the API KEY into your .env file
+2. Go to Alchemy getNFTs endpoint https://docs.alchemy.com/reference/getnfts for your BaseURL in the fetch functions
+3. Repeat no.2 for getNFTsForCollection https://docs.alchemy.com/reference/getnftsforcollection
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+##### Use opensea.io to get nft collection addresses
