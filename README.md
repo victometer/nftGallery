@@ -1,4 +1,5 @@
-This project uses Tailwind CSS (v3.3.3) with Next.js. It follows the steps outlined in the official Tailwind docs here: https://tailwindcss.com/docs/guides/nextjs.
+# Project idea
+To have a search website that fetches all the nft's for a certain collection address. To make this happen, an Alchemy API was used to get NFT data from the blockchain
 
 ## Required tools:
 
